@@ -11,14 +11,22 @@ const Footer = () => {
     <Wrapper>
       <div className="footer__header">
         <img src={logo} alt="logo" />
-        <div className="socail-icons">
-          <IconFacebook className="footer__icon" />
-          <IconTwitter className="footer__icon" />
-          <IconPinterest className="footer__icon" />
-          <IconInstagram className="footer__icon" />
+        <div className="social-icons">
+          <div className="icon-container">
+            <IconFacebook className="footer__icon" />
+          </div>
+          <div className="icon-container">
+            <IconTwitter className="footer__icon" />
+          </div>
+          <div className="icon-container">
+            <IconPinterest className="footer__icon" />
+          </div>
+          <div className="icon-container">
+            <IconInstagram className="footer__icon" />
+          </div>
         </div>
       </div>
-      <div className="footer_footer">
+      <div className="footer__footer">
         <ul className="footer__list">
           <li>
             <a href="/">about</a>

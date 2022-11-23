@@ -4,6 +4,11 @@ const NavbarWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-row: 1/2;
+  grid-column: center-start/ center-end;
+  z-index: 20;
+  align-self: start;
+  margin-top: 4rem;
 
   & .nav__list {
     list-style: none;

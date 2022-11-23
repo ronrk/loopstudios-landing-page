@@ -6,7 +6,7 @@ import imgDesktop from "../../assets/images/desktop/image-interactive.jpg";
 const MainSection = () => {
   return (
     <Wrapper>
-      <img src={imgDesktop} alt="illustration" />
+      <img src={imgDesktop} alt="illustration" className="section__img" />
       <div className="content">
         <h3>The leader in interactive VR</h3>
         <p>

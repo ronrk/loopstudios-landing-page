@@ -3,7 +3,7 @@
 :root {
   --font-alata: "Alata", sans-serif; /*  300 */
   --font-josef: "Josefin Sans", sans-serif; /*  400 */
-  --main-padding: 5rem 10rem 0 10rem;
+  --main-padding: 5rem 14rem 0 14rem;
 
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -25,4 +25,40 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+.app-container {
+  display: grid;
+  grid-template-rows: 80vh 100vh repeat(2, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      5,
+      [col-start] minmax(min-content, 30rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  row-gap: 8rem;
+}
+
+main {
+  /* padding: var(--main-padding); */
+}
+
+.btn {
+  background: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 52%;
+  }
 }
