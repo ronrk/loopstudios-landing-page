@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.svg";
 import iconHamburger from "../../assets/images/icon-hamburger.svg";
 import iconClose from "../../assets/images/icon-close.svg";
 
-const Navbar = () => {
+const Navbar = ({ toggleMenu, showMenu }) => {
   return (
     <Wrapper>
       <img src={logo} alt="logo" />
@@ -27,7 +27,11 @@ const Navbar = () => {
         </li>
       </ul>
       <button className="btn btn-menu">
-        <img src={iconHamburger} alt="" />
+        <img
+          src={showMenu ? iconClose : iconHamburger}
+          alt=""
+          onClick={toggleMenu}
+        />
       </button>
     </Wrapper>
   );
